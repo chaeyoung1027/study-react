@@ -17,12 +17,12 @@ const Pig = () => <div>🐷</div>
 function AnimalContainer() {
     return (
         /* 일반적인 태그 사용 가능 */
-        <React.Fragment>
+        <>
             {/* 이미 정의한 컴포넌트들도 JSX 내부에서 사용 가능 */}
             <Cat />
             <Dog />
             <Pig />
-        </React.Fragment>
+        </>
     )
 }
 

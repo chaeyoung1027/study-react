@@ -39,7 +39,7 @@ const el2 = <div>
     <h1>Hello!</h1>
     {
         unreadMessages.length > 0 &&
-        <h2>You have {unreadMessages.length} unread messages.</h2>  //&&연산자는 마지막에 평가한 값을 return함.
+        <h2>You have {unreadMessages.length} unread messages.</h2>  //&&연산자는 마지막에 평가한 값을 return함. && 또는 삼항연산자를 사용해 활용 가능!
     }
 </div>
 

@@ -43,5 +43,8 @@ const el2 = <div>
     }
 </div>
 
+const el3 = <h1 style = {{color : "red", backgroundColor : "blue"}} >Hello Style!</h1>    //'color : "red"' 은 불가! background-color과 같이 -이 들어있는 것들은 backgroundColor와 같이 대문자로 바꿔주기!
+//겉에 노란 중괄호는 자바 스크립트 안에서 코드를 쓸 때 필요, 보라색은 객체여서 필요!
+
 const root = ReactDOM.createRoot(document.getElementById('root'));  //index.html에 있는 root를 빌려옴!
-root.render(el2);  //괄호 안에 있는 것을 화면에 그려줌
+root.render(el3);  //괄호 안에 있는 것을 화면에 그려줌

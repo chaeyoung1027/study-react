@@ -2,4 +2,5 @@
 //import './jsxstudy.js'
 // import './first-component.js'
 // import './animal-container.js'
-import './props-basic'
+// import './props-basic'
+import './sol_greeting'

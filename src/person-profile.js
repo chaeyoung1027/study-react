@@ -16,6 +16,14 @@ const PersonProfile = function(props) { //구조분해 할당을 나누지 않�
     )
 }
 
+// 클래스의 속성에 defaultProps 속성(객체 타입)을 정의하고 기본 전달 props 값을 설정 가능
+PersonProfile.defaultProps = {
+    name: "Unknown",
+    gender: "Unknown",
+    age: 0,
+    profile: 'https://via.placeholder.com/150'
+}
+
 const myperson = {
     name : '채영',
     age : '19',

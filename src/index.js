@@ -4,4 +4,5 @@
 // import './animal-container.js'
 // import './props-basic'
 // import './sol_greeting'
-import './person-profile'
+// import './person-profile'
+import './props-children'

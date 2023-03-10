@@ -3,4 +3,5 @@
 // import './first-component.js'
 // import './animal-container.js'
 // import './props-basic'
-import './sol_greeting'
+// import './sol_greeting'
+import './person-profile'

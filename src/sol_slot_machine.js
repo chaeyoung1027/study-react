@@ -4,11 +4,17 @@ import React from 'react'
 const SlotMachine = function(props){
     const {s1, s2, s3} = props;
     if(s1 == s2 && s2==s3){
-        if(s1=="7") return <div style={{color:"red"}}>Congrats!</div>
-        else return <div>Congrats</div>
+        if(s1=="7") return (
+        <div style={{color:"red"}}>
+            <div>{s1} {s2} {s3} </div>
+            Congrats!</div>)
+        
+        else return <div>
+            <div>{s1} {s2} {s3} </div>
+            Congrats</div>
     }
     else {
-        return null;
+        return <p>{s1} {s2} {s3}</p>;
     }
 }
 
@@ -20,4 +26,10 @@ const SlotMachine = function(props){
 <SlotMachine s1="🍒" s2="🍒" s3="🍒" />  */}
 
 
-ReactDOM.render(<SlotMachine s1="7" s2="7" s3="7" />, document.getElementById("root"))
+ReactDOM.render(
+<div>
+<SlotMachine s1="7" s2="7" s3="7" />
+<SlotMachine s1="🍎" s2="🍎" s3="🍎" />
+<SlotMachine s1="🍎" s2="🍏" s3="🍎" />
+</div>
+, document.getElementById("root"))

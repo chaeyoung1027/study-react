@@ -3,19 +3,13 @@ import React from 'react'
 
 const SlotMachine = function(props){
     const {s1, s2, s3} = props;
-    if(s1 == s2 && s2==s3){
-        if(s1=="7") return (
-        <div style={{color:"red"}}>
-            <div>{s1} {s2} {s3} </div>
-            Congrats!</div>)
-        
-        else return <div>
-            <div>{s1} {s2} {s3} </div>
-            Congrats</div>
-    }
-    else {
-        return <p>{s1} {s2} {s3}</p>;
-    }
+    const patterns = <p>{s1} {s2} {s3} </p>
+    const allSamePattern = s1===s2&& s2===s3;
+    const shouldHighlight = allSamePattern&&s1==='7';
+    return <div>
+        {patterns}
+        {allSamePattern&&<p style={shouldHighlight?{color : "red"}:null}>Congrats!</p>}
+    </div>
 }
 
 

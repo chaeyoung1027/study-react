@@ -7,4 +7,5 @@
 // import './person-profile'
 // import './props-children'
 // import './sol_slot_machine'
-import './state-study-1'
+// import './state-study-1'
+import './sol_user_profile'

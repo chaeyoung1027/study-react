@@ -3,7 +3,10 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 const Counter = function(props) {
     // useState 함수(훅)을 사용하여 상태 및 상태 변경 함수 불러오기
-    const [count, setCount] = useState(0)
+    //const [count, setCount] = useState(0)
+    const arr = useState(0)
+    const count = arr[0]
+    const setCount = arr[1]
     return (
         <div>
         <h1>{count}</h1>

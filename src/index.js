@@ -6,4 +6,5 @@
 // import './sol_greeting'
 // import './person-profile'
 // import './props-children'
-import './sol_slot_machine'
+// import './sol_slot_machine'
+import './state-study-1'

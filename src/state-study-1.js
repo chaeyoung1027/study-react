@@ -11,8 +11,9 @@ const Counter = function(props) {
         <div>
             <h1>{count}</h1>
             <button onClick={() => setCount(count + 1)}>증가</button>
+            <button onClick={() => setCount(c => c + 1)}>증가</button>  {/*callback함수*/}
             {/* Q) 감소 버튼 만들어보기 */}
-            <button onClick={() => setCount(count -1)}>감소</button>
+            <button onClick={() => setCount(c=> c -1)}>감소</button>
         </div>
     )
 }

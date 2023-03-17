@@ -9,4 +9,5 @@
 // import './sol_slot_machine'
 // import './state-study-1'
 // import './sol_user_profile'
-import './state-study-3'
+//import './state-study-3'
+import './counter-with-hook-caveat'

@@ -10,4 +10,6 @@
 // import './state-study-1'
 // import './sol_user_profile'
 //import './state-study-3'
-import './counter-with-hook-caveat'
+// import './counter-with-hook-caveat'
+// import './counter-demo'
+import './manipulate-list'

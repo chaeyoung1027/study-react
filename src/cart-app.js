@@ -46,7 +46,7 @@ function CartApp(props){
     const addItemCount = (id, amount) => setItemList(list =>{
         return list.map(item=>{
             if(item.id === id){
-                item = {... item, count : item.count+amount}
+                item = {...item, count : item.count+amount}
             }
             return item
         })

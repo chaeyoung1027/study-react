@@ -5,12 +5,15 @@ const CounterWithLocalStorage = (props) => {
     // localStorage 접근 코드가 mount 되는 시점에 단 한번만 실행되도록, useState로 전달할 함수 안에 초기화 코드 작성
     const [ count, setCount ] = useState(() => {
         // nullish coalescing operator(??) 사용
-        return localStorage.getItem("count") ?? 0 //왼쪽이 null이면 오른쪽, 왼쪽에 값이 있으면 왼쪽 값
+        return localStorage.getItem("count") === null ? 
+        0
+        :
+        parseInt(localStorage.getItem("count")) //왼쪽이 null이면 오른쪽, 왼쪽에 값이 있으면 왼쪽 값
     })
 
     useEffect(() => {
         // count 값이 변경될 때마다 localStorage에 저장된 값도 변경
-        localStorage.setItem("count", parseInt(count))
+        localStorage.setItem("count", count)
     }, [count])
 
     return (

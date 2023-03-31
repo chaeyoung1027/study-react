@@ -15,4 +15,6 @@
 // import './manipulate-list'
 // import './todo-app-demo'
 // import './shopping-cart'
-import './cart-app'
+// import './cart-app'
+// import './use-effect-deps'
+import './use-effect-using-local-storage.js'

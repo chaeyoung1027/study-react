@@ -20,4 +20,5 @@
 // import './use-effect-using-local-storage.js'
 // import './use-effect-unmount'
 // import './use-effect-unmount-deps'
-import './use-effect-with-dom.js'
+// import './use-effect-with-dom.js'
+import './timer-demo'

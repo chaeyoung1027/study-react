@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import ReactDOM from "react-dom"
 
 const RepoItem = (props) => {
-    const { name, description, forks_count, stargazers_count, watchers_count, owner: { login } } = props.repo   //객체 분해 할당
+    const { name, description, forks_count, stargazers_count, watchers_count, owner: { login } } = props.repo
 
     return (
         <div>
@@ -13,28 +13,36 @@ const RepoItem = (props) => {
     )
 }
 
+
+
 function RepoSearchApp() {
-    const [repos, setRepos] = useState([])
+    const [username, setUsername] = useState(null)
     const [loading, setLoading] = useState(true)
-    // 자기 아이디, PAT 토큰값으로 변경
-    const userName = "chaeyoung1027"
-    const PAT = "token"
+    const [text, setText] = useState('')
+    const [repos, setRepos] = useState([])
+    const PAT = "token";
 
     useEffect(() => {
-        //fetch : side-effect
-        fetch(`https://api.github.com/users/${userName}/repos`, { headers: { Authorization: PAT } })
-            .then(res => res.json())
-            .then(data => {
-                // 데이터 설정 및 로딩 상태 갱신
-                setRepos(data)
-                setLoading(false)
-            })
-    }, [])
+        if(username != null) {
+            fetch(`https://api.github.com/users/${username}/repos`, { headers: { Authorization: PAT } })
+                .then(res => res.json())
+                .then(data => {
+                    // 데이터 설정 및 로딩 상태 갱신
+                    setRepos(data)
+                    setLoading(false)
+                })}
+    }, [username])
 
     return (
         <div>
+            <input type = "text" placeholder="Github 아이디 입력" onChange={e => setText(e.target.value)} value={text}/>
+            <button onClick={() =>{
+                if(text.trim().length != 0){
+                    setUsername(text.trim())
+                }
+            }} >저장소 검색</button>
             {
-                repos.length === 0  //2개의 삼항연산자 사용.
+                repos.length === 0
                     ? loading ? <h1>저장소를 불러오는 중입니다.</h1> : <h1>표시할 저장소가 없습니다.</h1>
                     :
                     <ul>

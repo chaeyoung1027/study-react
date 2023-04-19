@@ -20,7 +20,7 @@ function RepoSearchApp() {
     const [loading, setLoading] = useState(true)
     const [text, setText] = useState('')
     const [repos, setRepos] = useState([])
-    const PAT = "token";
+    const PAT = "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";
 
     useEffect(() => {
         if(username != null) {

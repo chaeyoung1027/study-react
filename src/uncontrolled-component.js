@@ -19,6 +19,7 @@ const ReservationForm = function(props) {
         setState({
             ...state,
             // 태그의 name 속성값을 속성키로 사용
+            //바뀐게 date, isforeigner 이면 name에 date, isforeigner이 넣어진다!
             [name]: value
         });
     }

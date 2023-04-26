@@ -18,7 +18,7 @@ const FormUncontrolledComponent = function(props) {
         <form>
             {/* input 요소와 ref 연결 */}
             <input type="text" ref={input} /><br />
-            <input type="file" ref={fileInput} /><br /> {/* 보안 문제 때문에 비제어가 필수~!*/}
+            <input type="file" ref={fileInput} /><br /> {/*보안 문제 때문에 비제어가 필수!*/}
             <input type="submit" onClick={handleSubmit} />
         </form>
     )

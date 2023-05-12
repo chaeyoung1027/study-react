@@ -37,4 +37,5 @@
 // import './loginService'
 // import './using-css'
 // import './using-css-module'
-import './using-styled-components'
+// import './using-styled-components'
+import './using-svg'

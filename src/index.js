@@ -38,4 +38,5 @@
 // import './using-css'
 // import './using-css-module'
 // import './using-styled-components'
-import './using-svg'
+// import './using-svg'
+import './using-react-icons'

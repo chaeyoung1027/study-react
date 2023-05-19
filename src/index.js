@@ -41,4 +41,5 @@
 // import './using-svg'
 // import './using-react-icons'
 // import './use-callback-counter-demo'
-import './use-memo-demo'
+// import './use-memo-demo'
+import './user-manage-app'

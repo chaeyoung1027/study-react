@@ -44,4 +44,5 @@
 // import './use-memo-demo'
 // import './user-manage-app'
 // import './using-react-memo'
-import './test_3212'
+// import './test_3212'
+import './using-error-boundaries'
